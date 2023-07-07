@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelComplete : MonoBehaviour {
+public class Menu : MonoBehaviour {
 
-    // The function of loading the next scene.
-    public void LoadNewLevel(){
+    // When you press the "Start" button, 
+    // this function is triggered, which start the game.
+    public void StartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Move to the next scene using +1 index navigation
     }
 
